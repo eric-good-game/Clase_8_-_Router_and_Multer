@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div
+    id="modal"
+    class="hidden"
+  >
+    <p></p>
+  </div>
+  <div class="container">
+    <h1>Añadir nuevo producto</h1>
+    <form id="addProduct" method="post" action="/api/products/create">
+      <div>
+
+        <label for="name">Nombre</label>
+        <input name="name" id="name" type="text" required placeholder="Globo Terráqueo">
+      </div>
+      <div>
+        <label for="price">Precio</label>
+        <input name="price" id="price" type="number" required placeholder="345.67" step="0.01">
+      </div>
+      <div>
+        <label for="thumbnail">Imagen</label>
+        <input name="thumbnail" id="thumbnail" type="text" required placeholder="https://cdn3.iconfinder.com/data.png">
+      </div>
+      <button
+        type="submit"
+      >
+        <p>Añadir</p>
+      </button>
+    </form>
+  </div>
+  <button id="randomData"><p>Añadir datos random</p></button>
+
+  <script src="/js/index.js"></script>
+</body>
+</html>
