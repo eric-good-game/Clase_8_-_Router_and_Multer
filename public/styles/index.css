@@ -3,7 +3,10 @@
   margin: 0;
   padding: 0;
   line-height: normal;
-  box-sizing: content-box;
+  box-sizing: border-box;
+}
+button,input{
+  font-family: 'Arima', cursive;
 }
 body{
   font-family: 'Arima', cursive;
@@ -21,7 +24,7 @@ body{
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0,0,0,.3);
   border-radius: .5rem;
-  min-width: 374px;
+  min-width: 414px;
 }
 h1{
   text-align: center;
@@ -30,11 +33,6 @@ form{
   display: flex;
   flex-direction: column;
 }
-/* form div{
-  display: flex;
-  align-items: flex-end;
-  margin: .5rem;
-} */
 label{
   width: 100px;
   font-size: 1.1rem;
@@ -42,13 +40,6 @@ label{
   border-right: 1px solid lightgray;
   padding: .5rem 0rem .35rem .5rem;
 }
-/* input{
-  padding: .3rem;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid lightgray;
-  outline: none;
-} */
 
 form div{
   display: flex;
@@ -78,7 +69,7 @@ input{
 }
 button[type='submit']{
   cursor: pointer;
-  padding: .7rem;
+  padding: .7rem .7rem .6rem;
   border-radius: .25rem;
   margin-top: 1rem;
   background-color: limegreen;
@@ -88,6 +79,7 @@ button[type='submit']{
   font-size: 1.2rem;
 }
 button[type='submit'] p{
+  line-height: 22px;
   font-weight: 500;
 }
 
@@ -158,16 +150,20 @@ button[type='submit']:hover{
   background-color: white;
   border: 1px solid dodgerblue;
   color:  rgba(30, 144, 255, .7);
-  padding: .7rem;
+  padding: .5rem .7rem;
   font-size: 1.1rem;
   font-weight: 500;
   cursor: pointer;
+  align-self: center;
   transition: .1s;
 }
 #randomData:hover{
   color: dodgerblue;
+  border-width: 2px;
   text-shadow: 0px 0px 1px rgba(30, 144, 255, .5);
   box-shadow: 2px 2px 5px rgba(30, 144, 255, .5);
   border-radius: .5rem;
+  padding: .3rem .5rem;
   transition: .2s;
+  margin-bottom: .3rem;
 }
